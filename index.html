@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  <button class="w3-btn-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="imgs/background-1.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Send Messages via Terminal: Multi-Messenger</h1>
+        <hr class="w3-opacity">
+        <p>Easy to use. Free. And fast.</p>
+        <p><button class="w3-btn-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Get Started</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="imgs/background-2.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge w3-text-red"><b>DIA!</b> Do it anywhere.</h1>
+        <hr class="w3-opacity">
+        <p>Message via Terminal at one go.</p>
+        <p><button class="w3-btn-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Get Started</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="imgs/background-3.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Features</h1>
+        <hr class="w3-opacity">
+        <p>Send mails along with attachments and messages to multiple friends on FB.</p>
+        <p><button class="w3-btn-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Get Started</button></p>
+      </div>
+    </div>
+  </div>
+  <a class="w3-btn w3-black w3-padding w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+  <a class="w3-btn-block w3-black w3-padding w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+</header>
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-blue">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Multi-Messenger</b></h1> A Smart messenger
+      -</span>
+      
+      Multi-Messenger is a very innovatie application which is very user friendly and allows the user to send messages/texts and images via facebook,a short message service(SMS) or through an e-mail with the help of terminal or IDLE like environment.</p>
+      <button class="w3-btn w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-download"></i> Get Started
+      </button>
+      
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="imgs/background-1.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-btn-block w3-light-grey w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+        <img src="imgs/background-1.jpg" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="download" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content w3-padding-jumbo">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-closebtn w3-hover-text-grey w3-margin"></i>
+      <h2 class="w3-wide">Get Started</h2>
+      <p>Get started with the project by downloading the repository on GitHub.</p>
+      <a href = "github.com/krshrimali/Multi-Messenger"><i class="fa fa-github w3-large">  GitHub Repository</i> </a>
+     </div>
+  </div>
+</div>
+
+<!--clarity section -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="imgs/questions.png" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Messages</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>is it so easy?</b></h1>
+      <p><span class="w3-xlarge">A revolution in Messaging.</span> Messaging in a very effective and efficient way can be done very easily with the help of Multi-Messenger. By simple installation of some of the modules,messages and text files can be easily sent via terminal. Such applications are very useful for programmers
+      and frequent terminal users.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+  <h1 class="w3-jumbo"><b>Features</b></h1>
+  <h2 style="color:#ffff00">DO IT ANYWHERE</h2>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s3">
+      <i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
+      <p>Fast</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-heart w3-text-red w3-jumbo"></i>
+      <p>Loved</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-terminal w3-text-yellow w3-jumbo"></i>
+      <p>terminal</p>
+    </div>
+    <div class="w3-col s3">
+      <i class="fa fa-facebook w3-text-green w3-jumbo"></i>
+      <p>facebook</p>
+    </div>
+  </div>
+
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s6">
+      <i class="fa fa-google w3-text-white w3-jumbo"></i>
+      <p>google</p>
+  </div>
+  
+  <div class="w3-row" style="margin-top:64px">
+    <div class="w3-col s6">
+      <i class="fa fa-user w3-text-sand w3-jumbo"></i>
+      <p>Connecting People</p>
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+<!-- Option Section -->
+<div class="w3-padding-64 w3-center w3-white">
+  <h1 style="color:#FF0000" class="w3-jumbo"><b>FEATURES</b></h1>
+ <h3> Know about the features of Multi-Messenger.</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-card-2 w3-hover-shadow">
+        <li class="w3-orange w3-xlarge w3-padding-32">Gmail</li>
+        <li class="w3-padding-16"><b></b> Username [Required]</li>
+        <li class="w3-padding-16"><b></b> Password [Required]</li>
+        <li class="w3-padding-16"><b></b> Message</li>
+        <li class="w3-padding-16"><b></b> Attach Files</li>
+        
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-card-2 w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">SMS</li>
+        <li class="w3-padding-16">SID[Required] NUMBER</li>
+        <li class="w3-padding-16">TOKEN[Required] NUMBER</li>
+        <li class="w3-padding-16">Your Twilio Number</li>
+        <li class="w3-padding-16">Receiver's Message</li>
+        
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-card-2 w3-hover-shadow">
+        <li class="w3-blue w3-xlarge w3-padding-32">Facebook</li>
+        <li class="w3-padding-16">Username [Required]</li>
+        <li class="w3-padding-16">Password [Required]</li>
+        <li class="w3-padding-16">Friend's name</li>
+        <li class="w3-padding-16">Text Message</li>
+        
+      </ul>
+    </div>
+  </div>
+  <br>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+  <div class="w3-section">
+    <a href="fb.com/v.krshrimali"><i class="fa fa-facebook-official w3-hover-text-indigo"></i> </a>
+    <a href = "https://www.linkedin.com/in/kushashwa-ravi-shrimali-b6780152"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
+  </div>
+  <p class="w3-medium">Reach us <a href="github.com/krshrimali/Multi-Messenger" target="_blank" class="w3-hover-text-green">here</a></p>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
