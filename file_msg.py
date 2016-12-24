@@ -4,7 +4,7 @@ import getpass
 import fbchat
 from pyautogui import *
 your_mode= confirm(text='enter your Mode',title='Mode details:Multi Messenger',buttons=['TERMINAL MODE','DIALOG MODE'])
-if (your_mode == "terminal"):
+if (your_mode == "Terminal"):
 		print """-------------------------------------------------------------------------
 				------------------------------------------
 				|	WELCOME TO MULTIMESSENGER    		  
