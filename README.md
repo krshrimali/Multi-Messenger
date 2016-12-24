@@ -25,7 +25,7 @@ Before compiling and running the code, installation the following modules is nec
 <li> The options required in the Main menu have to be filled exactly and accurately. </li>
 <li> Proper informatin regarding the username and the password has to be entered by the user. </li>
 <li> User has to enter the exact address of the files to be attached if (any). </li>
-<li> The twilio account ""SID number" and "Auth token" has to be entered by the user to send the required messages. </li>
+<li> The twilio account "SID number" and "Auth token" has to be entered by the user to send the required messages. </li>
 </ul>
 <h2> Contributors </h2>
 
@@ -38,18 +38,3 @@ Before compiling and running the code, installation the following modules is nec
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
