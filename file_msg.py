@@ -3,15 +3,16 @@ from email import encoders
 import getpass
 import fbchat
 from pyautogui import *
-your_choice= confirm(text='enter your choice',title='choice details:Multi Messenger',buttons=['TERMINAL','DIALOG'])
-if (your_choice == "terminal"):
+your_mode= confirm(text='enter your Mode',title='Mode details:Multi Messenger',buttons=['TERMINAL','DIALOG'])
+if (your_mode == "terminal"):
 		print """-------------------------------------------------------------------------
 				------------------------------------------
 				|	WELCOME TO MULTIMESSENGER    		  
 				|								 
 				|	BUILT BY:					 
-				|		Krutika Bapat			 
+				|					 
 				|		Kushashwa Ravi Shrimali
+				                Krutika Bapat 
 				|								 		
 				|	Undergraduate Students at:	 		  
 				|		IIIT NAYA RAIPUR		 		 
@@ -94,7 +95,7 @@ if (your_choice == "terminal"):
 			  if sent:
 				print("Message sent successfully")
 			  else:
-				print("Not sent")
+				print("Message Sending Failed")
 				
 			# SMS 
 			elif(number == 3):
@@ -109,12 +110,12 @@ if (your_choice == "terminal"):
 				body = bodyText,
 			  )
 			exit_input = raw_input("""If you want to exit, type "EXIT", else Press any key.""")
-elif(your_choice =="dialogue"):
+elif(your_mode =="dialogue"):
 
 		st_input = "Get-Started"	
 
 		if (st_input == "Get-Started"):
-			alert(text = 'You will be asked for some information now. Move on as directed.', title='Multi-Messenger', button = 'OK')
+			alert(text = 'You will be asked for some information now. Follow The Instructions.', title='Multi-Messenger', button = 'OK')
 			# DETAILS - Email
 			# print "-------------------------------------------------------------------------"
 			# print 'Enter your Email-ID details' 
