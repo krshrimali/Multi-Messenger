@@ -3,7 +3,7 @@ from email import encoders
 import getpass
 import fbchat
 from pyautogui import *
-your_mode= confirm(text='enter your Mode',title='Mode details:Multi Messenger',buttons=['TERMINAL','DIALOG'])
+your_mode= confirm(text='enter your Mode',title='Mode details:Multi Messenger',buttons=['TERMINAL MODE','DIALOG MODE'])
 if (your_mode == "terminal"):
 		print """-------------------------------------------------------------------------
 				------------------------------------------
