@@ -3,6 +3,7 @@
 <title>Multi-Messenger | Krutika Bapat and Kushashwa Ravi Shrimali</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/poppins.css">
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -10,6 +11,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script src="animation.js"></script>
+</head>
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size: 16px;}
@@ -17,7 +19,17 @@ img {margin-bottom: -8px;}
 .mySlides {display: none;}
 </style>
 <body class="w3-content w3-black" style="max-width:1500px;">
-<div class="se-pre-con"></div>
+<div id="loader"></div>
+<!-- Navbar -->
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <ul class="w3-navbar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
+    <li style="width:25%"><a href="#home" class="w3-margin-left w3-round">Home</a></li>
+    <li style="width:25%"><a href="#getstarted" class="w3-round">Get Started</a></li>
+    <li style="width:25%"><a href="#aboutus" class="w3-round">About Us</a></li>
+    <li style="width:25%"><a href="#issues" class="w3-margin-right w3-round w3-hover-black">Issues</a></li>
+  </ul>
+</div>
 <!-- Header with Slideshow -->
 <header class="w3-display-container w3-center">
   <button class="w3-btn-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
@@ -28,7 +40,7 @@ img {margin-bottom: -8px;}
         <h1 class="w3-xlarge">Send Messages via Terminal: Multi-Messenger</h1>
         <hr class="w3-opacity">
         <p>Easy to use. Free. And fast.</p>
-        <p><button class="w3-btn-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Get Started</button></p>
+        <p><button class="w3-btn-block w3-green w3-round" onclick="document.getElementById('gstarted').style.display='block'">Get Started</button></p>
       </div>
     </div>
   </div>
@@ -39,7 +51,7 @@ img {margin-bottom: -8px;}
         <h1 class="w3-xlarge w3-text-red"><b>DIA!</b> Do it anywhere.</h1>
         <hr class="w3-opacity">
         <p>Message via Terminal at one go.</p>
-        <p><button class="w3-btn-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Get Started</button></p>
+        <p><button class="w3-btn-block w3-red w3-round" onclick="document.getElementById('kmore').style.display='block'">Know More</button></p>
       </div>
     </div>
   </div>
@@ -50,26 +62,27 @@ img {margin-bottom: -8px;}
         <h1 class="w3-xlarge">Features</h1>
         <hr class="w3-opacity">
         <p>Send mails along with attachments and messages to multiple friends on FB.</p>
-        <p><button class="w3-btn-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Get Started</button></p>
+        <p><button class="w3-btn-block w3-indigo w3-round" onclick="document.getElementById('features').style.display='block'">Features</button></p>
       </div>
     </div>
   </div>
-  <a class="w3-btn w3-black w3-padding w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+  <a class="w3-btn w3-black w3-padding w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Click Here! <i class="fa fa-angle-right"></i></a>
   <a class="w3-btn-block w3-black w3-padding w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
 </header>
 
 <!-- The App Section -->
-<div class="w3-padding-64 w3-blue">
+<div class="w3-padding-64 w3-blue" id = "gstarted">
   <div class="w3-row-padding">
     <div class="w3-col l8 m6">
       <h1 class="w3-jumbo"><b>Multi-Messenger</b></h1> A Smart messenger
       -</span>
       
       Multi-Messenger is a very innovatie application which is very user friendly and allows the user to send messages/texts and images via facebook,a short message service(SMS) or through an e-mail with the help of terminal or IDLE like environment.</p>
-      <button class="w3-btn w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
-        <i class="fa fa-download"></i> Get Started
-      </button>
-      
+	<ul class="w3-navbar w3-light-grey w3-ground w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+	<li>
+		<a href="#features">Features</a>
+	</li>
+	</ul>
     </div>
     <div class="w3-col l4 m6">
       <img src="imgs/background-1.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
@@ -84,7 +97,7 @@ img {margin-bottom: -8px;}
 </div>
 
 <!-- Modal -->
-<div id="download" class="w3-modal w3-animate-opacity">
+<div class="w3-modal w3-animate-opacity" id="download">
   <div class="w3-modal-content w3-padding-jumbo">
     <div class="w3-container w3-white">
       <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-closebtn w3-hover-text-grey w3-margin"></i>
@@ -96,7 +109,7 @@ img {margin-bottom: -8px;}
 </div>
 
 <!--clarity section -->
-<div class="w3-padding-64 w3-light-grey">
+<div class="w3-padding-64 w3-light-grey" id="features">
   <div class="w3-row-padding">
     <div class="w3-col l4 m6">
       <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="imgs/questions.png" alt="App" width="335" height="471">
@@ -107,6 +120,9 @@ img {margin-bottom: -8px;}
       <p><span class="w3-xlarge">A revolution in Messaging.</span> Messaging in a very effective and efficient way can be done very easily with the help of Multi-Messenger. By simple installation of some of the modules,messages and text files can be easily sent via terminal. Such applications are very useful for programmers
       and frequent terminal users.
       </p>
+      <button class="w3-btn w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-download"></i> Get Started
+      </button>
     </div>
   </div>
 </div>
@@ -130,7 +146,7 @@ img {margin-bottom: -8px;}
       <p>terminal</p>
     </div>
     <div class="w3-col s3">
-      <i class="fa fa-facebook w3-text-blue w3-jumbo"></i>
+      <i class="fa fa-facebook w3-text-green w3-jumbo"></i>
       <p>facebook</p>
     </div>
   </div>
