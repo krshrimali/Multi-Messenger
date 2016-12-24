@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/poppins.css">
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="jquery.min.js"></script>
+<script src="modernizr.js"></script>
 <style>
 	body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 	body {font-size: 16px;}
@@ -14,16 +16,32 @@
 	.mySlides {display: none;}
 </style>
 <style>
-#load{
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:9999;
-    background:url("http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_3.gif") no-repeat center center #fff
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(loader.gif) center no-repeat #fff;
 }
 </style>
+<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	$(window).on('load',function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+</head>
 <body class="w3-content w3-black" style="max-width:1500px;">
-<div id="load"></div>
+<div class="se-pre-con" style="display: none;"></div>
 <!-- Navbar -->
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
@@ -84,7 +102,7 @@
       Multi-Messenger is a very innovatie application which is very user friendly and allows the user to send messages/texts and images via facebook,a short message service(SMS) or through an e-mail with the help of terminal or IDLE like environment.</p>
 	<ul class="w3-navbar w3-light-grey w3-ground w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
 	<li>
-		<a href="#features">Features</a>
+		<a href="#features"></a>
 	</li>
 	</ul>
     </div>
@@ -146,7 +164,7 @@
       <p>Loved</p>
     </div>
     <div class="w3-col s3">
-      <i class="fa fa-terminal w3-text-yellow w3-jumbo"></i>
+      <i class="fa fa-terminal w3-text-black w3-jumbo"></i>
       <p>terminal</p>
     </div>
     <div class="w3-col s3">
@@ -239,15 +257,6 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
-<script src="jquery.min.js"></script>
-<script src="modernizr.js"></script>
-<script>
-//paste this code under the head tag or in a separate js file.
-	// Wait for window load
-	$(window).load(function() {
-		// Animate loader off screen
-		$("#load").fadeOut("slow");;
-	});
-</script>
+
 </body>
 </html>
