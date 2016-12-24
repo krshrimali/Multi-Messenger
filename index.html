@@ -7,8 +7,6 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/poppins.css">
 <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-<script src="jquery.min.js"></script>
-<script src="modernizr.js"></script>
 <style>
 	body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 	body {font-size: 16px;}
@@ -16,39 +14,23 @@
 	.mySlides {display: none;}
 </style>
 <style>
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(loader.gif) center no-repeat #fff;
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_3.gif") no-repeat center center #fff
 }
 </style>
-<script>
-	//paste this code under head tag or in a seperate js file.
-	// Wait for window load
-	$(window).on('load',function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-</script>
-</head>
 <body class="w3-content w3-black" style="max-width:1500px;">
-<div class="se-pre-con" style="display: none;"></div>
+<div id="load"></div>
 <!-- Navbar -->
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <ul class="w3-navbar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
     <li style="width:25%"><a href="#home" class="w3-margin-left w3-round">Home</a></li>
-    <li style="width:25%"><a href="#getstarted" class="w3-round">Get Started</a></li>
-    <li style="width:25%"><a href="#aboutus" class="w3-round">About Us</a></li>
+    <li style="width:25%"><a href="#gstarted" class="w3-round">Get Started</a></li>
+    <li style="width:25%"><a href="#features" class="w3-round">Features</a></li>
     <li style="width:25%"><a href="#issues" class="w3-margin-right w3-round w3-hover-black">Issues</a></li>
   </ul>
 </div>
@@ -62,7 +44,13 @@ if it's not present, don't show loader */
         <h1 class="w3-xlarge">Send Messages via Terminal: Multi-Messenger</h1>
         <hr class="w3-opacity">
         <p>Easy to use. Free. And fast.</p>
-        <p><button class="w3-btn-block w3-green w3-round" onclick="document.getElementById('gstarted').style.display='block'">Get Started</button></p>
+        <p>
+			<ul class="w3-navbar w3-light-grey w3-ground w3-display-bottom w3-hide-small" style="bottom:-16px">
+			<li style="width:33.33%"><a href="#gstarted" class="w3-hover-red">Get Started</a></li>
+			<li style="width:33.33%"><a href="#gstarted2">Know More</a></li>
+			<li style="width:33.33%"><a href="#features" >Features</a></li>
+			</ul>
+		</p>
       </div>
     </div>
   </div>
@@ -73,7 +61,13 @@ if it's not present, don't show loader */
         <h1 class="w3-xlarge w3-text-red"><b>DIA!</b> Do it anywhere.</h1>
         <hr class="w3-opacity">
         <p>Message via Terminal at one go.</p>
-        <p><button class="w3-btn-block w3-red w3-round" onclick="document.getElementById('kmore').style.display='block'">Know More</button></p>
+        <p>
+			<ul class="w3-navbar w3-light-grey w3-ground w3-display-bottom w3-hide-small" style="bottom:-16px">
+			<li style="width:33.33%"><a href="#gstarted">Get Started</a></li>
+			<li style="width:33.33%"><a href="#gstarted2" class="w3-hover-red">Know More</a></li>
+			<li style="width:33.33%"><a href="#features" >Features</a></li>
+			</ul>
+		</p>
       </div>
     </div>
   </div>
@@ -84,7 +78,13 @@ if it's not present, don't show loader */
         <h1 class="w3-xlarge">Features</h1>
         <hr class="w3-opacity">
         <p>Send mails along with attachments and messages to multiple friends on FB.</p>
-        <p><button class="w3-btn-block w3-indigo w3-round" onclick="document.getElementById('features').style.display='block'">Features</button></p>
+        <p>
+			<ul class="w3-navbar w3-light-grey w3-ground w3-display-bottom w3-hide-small" style="bottom:-16px">
+			<li style="width:33.33%"><a href="#gstarted">Get Started</a></li>
+			<li style="width:33.33%"><a href="#gstarted2">Know More</a></li>
+			<li style="width:33.33%"><a href="#features" class="w3-hover-red">Features</a></li>
+			</ul>
+		</p>
       </div>
     </div>
   </div>
@@ -100,17 +100,12 @@ if it's not present, don't show loader */
       -</span>
       
       Multi-Messenger is a very innovatie application which is very user friendly and allows the user to send messages/texts and images via facebook,a short message service(SMS) or through an e-mail with the help of terminal or IDLE like environment.</p>
-	<ul class="w3-navbar w3-light-grey w3-ground w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-	<li>
-		<a href="#features"></a>
-	</li>
-	</ul>
     </div>
     <div class="w3-col l4 m6">
       <img src="imgs/background-1.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
       <div class="w3-center w3-hide-large w3-hide-medium">
         <button class="w3-btn-block w3-light-grey w3-padding-large" onclick="document.getElementById('download').style.display='block'">
-          <i class="fa fa-download"></i> Download Application
+          <i class="fa fa-github"></i> Download Application
         </button>
         <img src="imgs/background-1.jpg" class="w3-image w3-margin-top" width="335" height="471">
       </div>
@@ -131,7 +126,7 @@ if it's not present, don't show loader */
 </div>
 
 <!--clarity section -->
-<div class="w3-padding-64 w3-light-grey" id="features">
+<div class="w3-padding-64 w3-light-grey" id="gstarted2">
   <div class="w3-row-padding">
     <div class="w3-col l4 m6">
       <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="imgs/questions.png" alt="App" width="335" height="471">
@@ -150,7 +145,7 @@ if it's not present, don't show loader */
 </div>
 
 <!-- Features Section -->
-<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+<div class="w3-container w3-padding-64 w3-dark-grey w3-center" id = "features">
   <h1 class="w3-jumbo"><b>Features</b></h1>
   <h2 style="color:#ffff00">DO IT ANYWHERE</h2>
 
@@ -164,7 +159,7 @@ if it's not present, don't show loader */
       <p>Loved</p>
     </div>
     <div class="w3-col s3">
-      <i class="fa fa-terminal w3-text-black w3-jumbo"></i>
+      <i class="fa fa-terminal w3-text-yellow w3-jumbo"></i>
       <p>terminal</p>
     </div>
     <div class="w3-col s3">
@@ -228,13 +223,21 @@ if it's not present, don't show loader */
   <br>
 </div>
 
+<!-- Issues Section -->
+<div class="w3-container w3-padding-64 w3-green w3-center" id = "issues">
+  <h1 class="w3-jumbo"><b>Issues</b></h1>
+	<p>
+		<a href="https://github.com/krshrimali/Multi-Messenger/issues"> File issues here. </a>
+	</p>
+</div>
+
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
   <div class="w3-section">
     <a href="https://www.fb.com/v.krshrimali"><i class="fa fa-facebook-official w3-hover-text-indigo"></i> </a>
     <a href = "https://www.linkedin.com/in/kushashwa-ravi-shrimali-b6780152"><i class="fa fa-linkedin w3-hover-text-indigo"></i></a>
   </div>
-  <p style="offset: -5" class="w3-medium">Reach us <a href="https://www.github.com/krshrimali/Multi-Messenger" target="_blank" class="w3-hover-text-green">here</a></p>
+  <p style="offset: -5px" class="w3-medium">Reach us <a href="https://www.github.com/krshrimali/Multi-Messenger" target="_blank" class="w3-hover-text-green">here</a></p>
 </footer>
 
 <script>
@@ -257,6 +260,15 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
-
+<script src="jquery.min.js"></script>
+<script src="modernizr.js"></script>
+<script>
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$("#load").fadeOut("slow");;
+	});
+</script>
 </body>
 </html>
