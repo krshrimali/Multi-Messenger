@@ -3,7 +3,7 @@ from email import encoders
 import getpass
 import fbchat
 from pyautogui import *
-your_choice= prompt(text='enter your choice',title='choice details:Multi Messenger',default='')
+your_choice= confirm(text='enter your choice',title='choice details:Multi Messenger',buttons=['TERMINAL','DIALOG'])
 if (your_choice == "terminal"):
 		print """-------------------------------------------------------------------------
 				------------------------------------------
@@ -43,7 +43,7 @@ if (your_choice == "terminal"):
 		ACCOUNT_SID = raw_input("Account SID: ") # <auth sid>
 		AUTH_TOKEN = raw_input("Account Token: ") # <auth token>
 		fromNumber = str(raw_input("Enter your number: "))
-		exit_input = raw_input("""If you want to exit, type "EXIT", if not, type anything else.""")
+		exit_input = raw_input("""If you want to exit, type "EXIT", else Press any key.""")
 		while(exit_input != "EXIT"):
 			# MENU
 			print " EMAIL [1]  |  FACEBOOK MESSAGE [2] |  SMS [3] " 
@@ -108,7 +108,7 @@ if (your_choice == "terminal"):
 				from_ = '+' + fromNumber , #<fromNumber>
 				body = bodyText,
 			  )
-			exit_input = raw_input("""If you want to exit, type "EXIT", if not, type anything else.""")
+			exit_input = raw_input("""If you want to exit, type "EXIT", else Press any key.""")
 elif(your_choice =="dialogue"):
 
 		st_input = "Get-Started"	
@@ -129,7 +129,7 @@ elif(your_choice =="dialogue"):
 			# print "-------------------------------------------------------------------------"
 			# print 'Enter your Facebook Details'
 			# print "-------------------------------------------------------------------------"
-			your_id = prompt(text='Enter your FB Username', title='FB Details:Multi-Messenger', default='')
+			your_id = prompt(text='Enter your Facebook Username', title='FB Details:Multi-Messenger', default='')
 			#your_id = str(raw_input("Enter your username: "))
 			pass_fb = password(text='Type your Facebook Password', title='Facebook Detials:Multi-Messenger', default='', mask='*')
 
@@ -145,13 +145,13 @@ elif(your_choice =="dialogue"):
 			# AUTH_TOKEN = raw_input("Account Token: ") # <auth token>
 			fromNumber = prompt(text='Enter your Twilio Number', title='Twilio Details:Multi-Messenger', default='')
 			# fromNumber = str(raw_input("Enter your number: "))
-			exit_input = confirm(text='Do you want to carry on?', title='Confirm Message:Multi-Messenger', buttons=['YES','NO'])
+			exit_input = confirm(text='Do you want to continue?', title='Confirm Message:Multi-Messenger', buttons=['YES','NO'])
 			# exit_input = raw_input("""If you want to exit, type "EXIT", if not, type anything else.""")
 			while(exit_input != "NO"):
 				# MENU
 				# print " EMAIL [1]  |  FACEBOOK MESSAGE [2] |  SMS [3] " 
 			
-				number = confirm(text='Which Menu option do you want to select?', title='Menu Details:Multi-Messenger', buttons=['EMAIL','FB MESSAGE', 'SMS'])
+				number = confirm(text='Select Menu Option?', title='Menu Details:Multi-Messenger', buttons=['EMAIL','FB MESSAGE', 'SMS'])
 				# number = int(raw_input("Menu Selection: "))
 				# EMAILING
 				if(number == "EMAIL"):
@@ -240,4 +240,4 @@ elif(your_choice =="dialogue"):
 					from_ = '+' + fromNumber , #<fromNumber>
 					body = bodyText,
 					)
-				exit_input = confirm(text='Do you want to carry on?', title='Confirm Message:Multi-Messenger', buttons=['YES','NO'])
+				exit_input = confirm(text='Do You Want To Continue?', title='Confirm Message:Multi-Messenger', buttons=['YES','NO'])
