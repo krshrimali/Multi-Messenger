@@ -1,10 +1,14 @@
 from email.MIMEBase import MIMEBase
 from email import encoders
+from email.MIMEMultipart import MIMEMultipart
+from email.MIMEText import MIMEText
+from email.MIMEBase import MIMEBase
+from email import encoders
 import getpass
 import fbchat
 from pyautogui import *
-your_mode= confirm(text='enter your Mode',title='Mode details:Multi Messenger',buttons=['TERMINAL MODE','DIALOG MODE'])
-if (your_mode == "Terminal"):
+your_mode= confirm(text='Enter the Mode you want to work in',title='Mode details:Multi Messenger',buttons=['TERMINAL MODE','DIALOG MODE'])
+if (your_mode == "TERMINAL MODE"):
 		print """-------------------------------------------------------------------------
 				------------------------------------------
 				|	WELCOME TO MULTIMESSENGER    		  
@@ -110,7 +114,7 @@ if (your_mode == "Terminal"):
 				body = bodyText,
 			  )
 			exit_input = raw_input("""If you want to exit, type "EXIT", else Press any key.""")
-elif(your_mode =="dialogue"):
+elif(your_mode =="DIALOG MODE"):
 
 		st_input = "Get-Started"	
 
