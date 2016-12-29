@@ -31,7 +31,7 @@ if (your_mode == "TERMINAL MODE"):
 
 		your_adr = raw_input("Your email-ID: ")
 		pass_adr = getpass.getpass()
-haan meri 
+
 		# DETAILS - Facebook Message
 
 		print "-------------------------------------------------------------------------"
