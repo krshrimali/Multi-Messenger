@@ -1,5 +1,7 @@
 # Multi-Messenger 
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9be5aae79f4d479994997892593e86cd)](https://www.codacy.com/app/krshrimali/Multi-Messenger?utm_source=github.com&utm_medium=referral&utm_content=krshrimali/Multi-Messenger&utm_campaign=badger)
+
 A python program which allows you to message your friend on Facebook / Phone, comes with feature of mailing as well. [Multiple Attachments].
 
 <html>
